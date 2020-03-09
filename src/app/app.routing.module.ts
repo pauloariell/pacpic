@@ -5,8 +5,10 @@ import { PhotoListComponent } from './photos/photo-list/photo-list.component';
 import { PhotoFormComponent } from './photos/photo-form/photo-form.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { PhotoListResouver } from './photos/photo-list/photo-list.resouver';
+import { SignInComponent } from './home/signin/signin.component';
 
 const routes: Routes = [
+    { path: '', component: SignInComponent},
     { 
         path: 'user/:userName', 
         component: PhotoListComponent,
